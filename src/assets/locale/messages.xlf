@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="fr" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="emailLabel" datatype="html">
+        <source>Courriel:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@recolinline-auth/recolinline-auth.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="passwordLabel" datatype="html">
+        <source>Mot de passe:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@recolinline-auth/recolinline-auth.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="loginErrorLabel" datatype="html">
+        <source>401 - Utilisateur non authentifié</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@recolinline-auth/recolinline-auth.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="homeLabel" datatype="html">
+        <source>Accueil</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@recolinline-auth/recolinline-auth.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@recolinline-core/config/config-view.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@recolinline-core/mediation/mediation-view.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@recolinline-core/home/page-not-found.component.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="savingButtonLabel" datatype="html">
+        <source>Enregistrer</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@recolinline-generic/recolinline-generic.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@recolinline-generic/recolinline-generic.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cancellationButtonLabel" datatype="html">
+        <source>Annuler</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@recolinline-generic/recolinline-generic.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@recolinline-generic/recolinline-generic.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="creationButtonLabel" datatype="html">
+        <source>Nouveau</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@recolinline-generic/recolinline-generic.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="confirmCancellationLabel" datatype="html">
+        <source>Enregistrer vos modifications ?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@recolinline-generic/recolinline-generic.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="confirmSavingButtonLabel" datatype="html">
+        <source>Enregistrer</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@recolinline-generic/recolinline-generic.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="confirmCancellationButtonLabel" datatype="html">
+        <source>Annuler</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@recolinline-generic/recolinline-generic.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="configMuseumLabel" datatype="html">
+        <source>Etablissements</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@recolinline-core/config/config-view.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="artifactsLabel" datatype="html">
+        <source>Artefacts</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="mediationLabel" datatype="html">
+        <source>Médiation</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="configLabel" datatype="html">
+        <source>Configuration</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="configUserLabel" datatype="html">
+        <source>Utilisateurs</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@recolinline-core/config/config-view.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="configApplicationLabel" datatype="html">
+        <source>Application</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@recolinline-core/config/config-view.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="configAccountLabel" datatype="html">
+        <source>Compte</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@recolinline-core/config/config-view.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="logoutLabel" datatype="html">
+        <source>Déconnexion</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="loginLabel" datatype="html">
+        <source>Connexion</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="identityComponentTitle" datatype="html">
+        <source>Identité</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@recolinline-core/artifact/identity/identity-r.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@recolinline-core/artifact/identity/identity-rw.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="locationComponentTitle" datatype="html">
+        <source>Localisation</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@recolinline-core/artifact/location/location-r.component.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@recolinline-core/artifact/location/location-rw.component.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="insideMuseumLocationLabel" datatype="html">
+        <source>Dans le musée</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@recolinline-core/artifact/location/location-rw.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@recolinline-core/artifact/movement/movement-rw.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="storedMuseumLocationLabel" datatype="html">
+        <source>Dans les réserves</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@recolinline-core/artifact/location/location-rw.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@recolinline-core/artifact/movement/movement-rw.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sharedMuseumLocationLabel" datatype="html">
+        <source>En prêt</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@recolinline-core/artifact/location/location-rw.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@recolinline-core/artifact/movement/movement-rw.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inputLocationCommentLabel" datatype="html">
+        <source>Commentaire</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@recolinline-core/artifact/location/location-rw.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@recolinline-core/artifact/movement/movement-rw.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="movementComponentTitle" datatype="html">
+        <source>Déplacement</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@recolinline-core/artifact/movement/movement-r.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@recolinline-core/artifact/movement/movement-rw.component.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="artifactFormTitle" datatype="html">
+        <source>Artéfact</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@recolinline-core/artifact/artifact-view.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="selectMuseumLabel" datatype="html">
+        <source>Etablissement</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@recolinline-core/artifact/artifact-view.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="artifactListKey" datatype="html">
+        <source>Artéfacts</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@recolinline-core/artifact/artifact-view.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="museumFormTitle" datatype="html">
+        <source>Musée</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@recolinline-core/museum/config-museum-view.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="museumListKey" datatype="html">
+        <source>Etablissements</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@recolinline-core/museum/config-museum-view.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pageNotFoundErrorLabel" datatype="html">
+        <source>404 - Page non trouvée</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@recolinline-core/home/page-not-found.component.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

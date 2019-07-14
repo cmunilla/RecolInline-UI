@@ -1,0 +1,88 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-12" role="main">
+			<div style="display:flex;height:2rem;margin:0.3rem 0.3rem 0.3rem 0.3rem;padding-left:1.5rem;padding-top:0.3rem;">		    
+			   <h4 i18n="@@artifactFormTitle">Artéfact</h4>
+			   <span style="font-family:'Cursive',cursive;font-size:150%;text-align:left;margin-left:0.5rem;padding-left:0.5rem;">{{dataProvider.ref?dataProvider.ref.getName():''}}</span>
+			</div>			
+		</div> 
+	</div>
+	<div class="row">
+		<div class="col-md-12" role="main">
+			<div style="display:flex;margin-top:0.5rem;margin-bottom:0.5rem;margin-right:0.5rem;margin-left:0.5rem;padding-left:1.0rem;">		    
+				<div class="btn-group" dropdown>
+				   <button id="button-autoclose-museum" dropdownToggle type="button" class="btn btn-primary dropdown-toggle" aria-controls="dropdown-autoclose-museum">
+				       <small>...<span i18n="@@selectMuseumLabel">Etablissement</span></small><span class="caret"></span>
+				   </button>
+				   <ul id="dropdown-autoclose-museum" *dropdownMenu 
+				       class="dropdown-menu" 
+				       role="menu" 
+				       aria-labelledby="autoclose-museum">
+					     <li *ngFor="let museum of museumProvider.getList()" role="menuitem">
+					     	<a class="dropdown-item" 
+					     	[class.active]="(museumProvider.ref && museumProvider.ref.getId() === museum.getId())"
+					     	onMouseOver="this.style.cursor='pointer';"
+					     	(click)="museumProvider.selectRef(museum)">{{museum.name}}</a>
+					     </li>
+				   </ul>
+				</div>
+				<div style="display:flex;padding-left:0.5rem;width:75%;">		    
+			   		<span *ngIf="museumProvider.ref" 
+			   		style="text-align:left;margin-left:0.5rem;padding-left:0.5rem;padding-top:0.5rem;width:80%;border:1px 1px 1px 1px;border-color:rgb(180,180,180);background-color:rgb(230,230,230);" 
+			   		class="text-info">{{museumProvider.ref.name}}</span>
+				</div>
+			</div> 
+		</div>
+	</div>
+	<div class="row">	
+		<div class="col-md-9" role="main">
+			<div #mainScrollingFrame id="mainScrollingFrame">		   
+			    <template #identity></template>
+		    	<template #location></template>	
+		    	<template #movement></template>	
+		    	<template #picture></template>	
+		    	<template #specific></template>	
+		    </div>		    
+			<template #dataCreatorValidator></template>
+		</div>	
+		<div class="col-md-3" role="complementary">		
+		    <div style="position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;border:0 0 0 0;padding:0.1rem 0.1rem 0.1rem 0.1rem;width:100%;height:8rem;overflow:auto;top:-6rem;">
+			 	<nav id="scrollingMainNav">
+			 	    <ul style="list-style:none;">
+					   <li *ngFor="let component of getSubComponents()">
+				         <a *ngIf="getLevel(component) > 0" 
+				         	class="dropdown-item" 
+				         	title="{{component}}"
+				         	(click)="scroll(component)"
+				            style="display:block;color:grey;text-decoration:none;text-align:left;padding-top:0.1rem;max-height:1.5rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;"
+				            onMouseOver="this.style.cursor='pointer'" >
+				        	<small>{{getLocalName(component,getLocale())}}</small>
+				         </a>
+					   </li>
+					</ul>
+				 </nav>
+		 	</div>	
+			<div class="card border-outline" style="width:100%;height:20rem;overflow:auto;display:block;position:relative;top:-7rem;">		 		
+		 		<div class="card-header">
+		 			<span i18n="@@artifactListKey">Artéfacts</span>
+		 		</div>
+		 		<div class="card-body" style="padding:0.1rem 0.1rem 0.1rem 0.1rem;">
+					<span *ngFor="let artifact of dataProvider.getList()" 
+					  class="dropdown-item"
+					  [class.active]="(dataProvider.ref && artifact.getId()===dataProvider.ref.getId())"					  
+					  (click)="dataProvider.selectRef(artifact)" 
+					  onMouseOver="this.style.cursor='pointer'" 
+					  style="max-height:2rem;border:none;width:100%;padding-top:0.3rem;white-space:nowrap;overflow:hidden;text-overflow: ellipsis;">
+					  	<small>{{artifact.getName()}}</small>
+					 </span>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<template #validationExpector></template>
+</div>	
+
+
+
+
+

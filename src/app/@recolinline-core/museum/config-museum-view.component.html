@@ -1,0 +1,37 @@
+<div class="container bs-docs-container">
+	<div class="row">
+		<div class="col-md-12" role="main">
+			<div style="display:flex;margin-top:0.5rem;margin-bottom:0.5rem;margin-right:0.5rem;margin-left:0.5rem;padding-left:1.0rem;">		    
+			   <h2 i18n="@@museumFormTitle">Musée</h2>
+			</div>			
+		</div> 
+	</div>
+	<div class="row">	
+		<div class="col-md-9" role="main">
+		    <div style="display:flex;margin-top:0.5rem;margin-bottom:0.5rem;margin-right:0.5rem;margin-left:0.5rem;padding-left:0.5rem;">		    
+				<div class="card border-primary mb-8" style="margin-left:0.5rem;width:100%;height:20rem;overflow:auto;">
+			 		<template #identity></template>			 		
+				</div>
+		    </div>
+		</div>	
+		<div class="col-md-3" role="complementary">				
+			<div class="card border-outline" style="padding:0.2rem;margin:0.2rem;width:100%;height:20rem;overflow:auto;">
+		 		<div class="card-header">
+		 			<span i18n="@@museumListKey">Etablissements</span>
+		 		</div>
+		 		<div class="card-body">
+					<span *ngFor="let museum of dataProvider.getList()" 
+					  class="list-group-item list-group-item-action"
+					  [class.active]="(dataProvider.ref && museum.getId()===dataProvider.ref.getId())"					  
+					  (click)="dataProvider.selectRef(museum)" 
+					  onMouseOver="this.style.cursor='pointer'" 
+					  style="max-height:2rem;padding-top:0.3rem;white-space:nowrap;overflow:hidden;text-overflow: ellipsis;">
+					  	<small>{{museum.getName()}}</small>
+					 </span>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<template #dataCreatorValidator></template>
+	<template #validationExpector></template>
+</div>	

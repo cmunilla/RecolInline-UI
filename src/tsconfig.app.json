@@ -1,0 +1,16 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "types": [
+    	"node"
+    ]
+  },  
+  "exclude": [
+	"test.ts",
+	"main.dev.ts",
+    "**/*.spec.ts",
+  	"../mock/*.*",
+  	"../extra-webpack.config.js"
+  ]
+}

@@ -1,0 +1,9 @@
+export { ReadOnlyIdentityComponent } from './artifact/identity/identity-r.component';
+export { ReadWriteIdentityComponent } from './artifact/identity/identity-rw.component';
+export { ReadOnlyLocationComponent } from './artifact/location/location-r.component';
+export { ReadWriteLocationComponent } from './artifact/location/location-rw.component';
+export { ReadOnlyMovementComponent } from './artifact/movement/movement-r.component';
+export { ReadWriteMovementComponent } from './artifact/movement/movement-rw.component';
+export { PictureComponent } from './artifact/picture/picture.component';
+export { ReadOnlyPictureViewComponent } from './artifact/picture/picture-r.component';
+export { ReadWritePictureViewComponent } from './artifact/picture/picture-rw.component';

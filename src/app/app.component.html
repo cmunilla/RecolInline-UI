@@ -1,0 +1,89 @@
+<main>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-left">
+	  <span style="font-family:'palatino linotype', palatino, serif;font-size:180%">Recol<i>Inline</i>
+	  &#32;&#32;&#32;&#32;</span>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item">    
+	   		<a class="nav-link" [routerLink] = "['/']" title="Accueil" i18n-title="@@homeLabel">
+	   		<img src="assets/images/home.png" style="height:2em;width:2em;"/>
+	   		<span class="sr-only">(current)</span></a> 
+	      </li>
+	      <li role="nav-item">
+	         <a class="nav-link" [routerLink] = "['/config/museum']" title="Etablissements" i18n-title="@@configMuseumLabel">
+			 <img src="assets/images/museum.png" style="height:2em;width:2em;"/>
+			 </a>
+	     </li>
+	      <li class="nav-item">  		      
+	   		<a class="nav-link" [routerLink] = "['/artifact']" 
+	   		 title="Artefacts" i18n-title="@@artifactsLabel">
+	   		<img src="assets/images/inventory2.png" style="height:2.3em;width:2.3em;"/>
+	   		</a> 
+	   	  </li>
+	      <li class="nav-item">		      
+	   		<a class="nav-link" [routerLink] = "['/mediation']" 
+	   		 title="Médiation" i18n-title="@@mediationLabel">
+	   		<img src="assets/images/visit.png" style="height:2em;width:2em;"/>
+	   		</a> 
+	      </li>
+	    </ul>
+	  </div>
+	  <div>
+	    <ul class="navbar-nav mr-auto" style="padding-right:5em;">         
+	      <li class="nav-item dropdown" *ngIf="userService.getUserId()!==IMPORTED_ANONYMOUS.id">   		
+	        <div class="btn-group" dropdown> 
+	            <a id="dropdown-mainmenu-config-button" dropdownToggle type="button" 
+	            class="nav-link dropdown-toggle" aria-controls="dropdown-mainmenu-config"
+	            title="Configuration" i18n-title="@@configLabel">
+	            <img src="assets/images/settings2.png" style="height:2em;width:2em;"/>            
+	            <span class="caret"></span>
+	      		</a>
+			    <ul id="dropdown-mainmenu-config" *dropdownMenu class="dropdown-menu"
+			          role="menu" aria-labelledby="dropdown-mainmenu-config-button">
+			        <li role="menuitem"><a class="dropdown-item" [routerLink] = "['/config/user']"
+			        title="Utilisateurs" i18n-title="@@configUserLabel">
+			        <img src="assets/images/users.png" style="height:2em;width:2em;"/>           
+	           		&#32;&#32;&#32;&#32;<small>[<span i18n="@@configUserLabel">Utilisateurs</span>]</small></a>
+			        </li>
+			        <li role="menuitem"><a class="dropdown-item" [routerLink] ="['/config/application']" 
+			        title="Application" i18n-title="@@configApplicationLabel">
+			        <img src="assets/images/settings.png" style="height:2em;width:2em;"/>           
+	            	&#32;&#32;&#32;&#32;<small>[<span i18n="@@configApplicationLabel">Application</span>]</small></a>
+			        </li>
+			    </ul>		    
+	        </div>
+	      </li>
+	      <li class="nav-item dropdown">   		
+	        <div class="btn-group" dropdown> 
+	            <a id="dropdown-account-config-button" dropdownToggle type="button" 
+	            class="nav-link dropdown-toggle" aria-controls="dropdown-account-config"
+	            title="Compte" i18n-title="@@configAccountLabel">
+	            <span *ngIf="userService.getUserId()!==IMPORTED_ANONYMOUS.id"><small>{{userService.getLogin()}}</small>&#32;&#32;&#32;&#32;</span>
+	            <img src="assets/images/user.png" style="height:2em;width:2em;"/>  
+	            <span class="caret"></span>
+	      		</a>
+			    <ul id="dropdown-account-config" *dropdownMenu class="dropdown-menu"
+			        style="margin-left:0em;" role="menu" aria-labelledby="dropdown-account-config-button">		          
+			        <li role="menuitem" *ngIf="userService.getUserId()!==IMPORTED_ANONYMOUS.id">
+			        <a class="dropdown-item" [routerLink] = "['/']" (click)="authenticationService.logout()" title="Déconnexion" i18n-title="@@logoutLabel">
+			        <img src="assets/images/logout.png" style="height:1.5em;width:1.5em;"/>        
+	            	&#32;&#32;&#32;&#32;<small>[<span i18n="@@logoutLabel">Déconnexion</span>]</small></a>
+			        </li>
+			        <li role="menuitem" *ngIf="userService.getUserId()!==IMPORTED_ANONYMOUS.id"><a class="dropdown-item" [routerLink] ="['/config/account']" 
+			        title="Compte" i18n-title="@@configAccountLabel">
+			        <img src="assets/images/settings.png" style="height:1.5em;width:1.5em;"/>           
+	            	&#32;&#32;&#32;&#32;<small>[<span i18n="@@configAccountLabel">Compte</span>]</small></a>
+			        </li>
+			        <li role="menuitem" *ngIf="userService.getUserId()===IMPORTED_ANONYMOUS.id">
+			        <a class="dropdown-item" [routerLink] = "['/login']" (click)="authenticationService.redirectUrl='/'" title="Connexion" i18n-title="@@loginLabel">
+			        <img src="assets/images/login.png" style="height:1.5em;width:1.5em;"/>        
+	            	&#32;&#32;&#32;&#32;<small>[<span i18n="@@loginLabel">Connexion</span>]</small></a>
+			        </li>
+			    </ul>		    
+	        </div>
+	      </li> 
+	    </ul>
+	  </div>
+	</nav>
+	<router-outlet></router-outlet>
+</main>
