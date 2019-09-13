@@ -13,8 +13,8 @@ import { PictureViewComponent } from './picture.view.component';
               </ol>
               <div class="carousel-inner" *ngIf="slides">
                  <picture [carousel]="this" *ngFor="let slide of slides">
-                      <div class="text-center py-5 bg-dark text-white" style="width:100%;">
-                         <h5>{{slide.title}}</h5>
+                      <div class="text-center py-4 bg-dark text-white" style="width:100%;padding-bottom: 2.5rem !important;">
+                         <h6>{{slide.title}}</h6>
                          <div class="lead">
                            <a (click)="showPictureModal()"><img [src]="slide.content" alt="{{slide.subtitle}}" height="150px"></a>
                          </div>
