@@ -1,4 +1,5 @@
 import { BrowserModule} from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule, NgZone, ComponentFactoryResolver, ChangeDetectorRef, Injector } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
@@ -18,6 +19,7 @@ import { CoreModule } from './@recolinline-core/core.module';
   ],
   imports: [
     BrowserModule,
+ 	BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
     CommonModule,
@@ -29,7 +31,6 @@ import { CoreModule } from './@recolinline-core/core.module';
     CarouselModule.forRoot(),
     ModalModule.forRoot(),
     ServiceModule,
-    GenericModule,
     AuthModule,
     CoreModule
   ],

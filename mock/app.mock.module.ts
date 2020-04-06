@@ -1,4 +1,5 @@
 import { BrowserModule} from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule, ChangeDetectorRef, Injector } from '@angular/core';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppRoutingModule } from '../src/app/app-routing.module';
@@ -14,11 +15,12 @@ import { HttpRequestInterceptor} from './app.interceptor';
 
 
 @NgModule( { 
-  declarations: [
-    AppMockComponent
+  declarations: [ 
+	AppMockComponent 
   ],
   imports: [
     BrowserModule,
+ 	BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
     CommonModule,
@@ -29,13 +31,13 @@ import { HttpRequestInterceptor} from './app.interceptor';
     ButtonsModule.forRoot(),
     CarouselModule.forRoot(),
     ServiceModule,
-    GenericModule,
     AuthModule,
     CoreModule
   ],
   entryComponents: [],
   exports: [],
-  providers: [{
+  providers: [
+	{
     provide: HTTP_INTERCEPTORS,
     useClass: HttpRequestInterceptor,
     multi: true

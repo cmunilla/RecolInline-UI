@@ -184,7 +184,7 @@ export class ThemeConfigurationService
   private theme:string = "cerulean";
   
   public constructor(){
-    this.browserDomAdapter.setCookie("setCookie", "true");
+    //this.browserDomAdapter.setCookie("setCookie", "true");
   }  
 
   getDocument() : HTMLDocument {

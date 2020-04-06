@@ -66,7 +66,6 @@ const routes: Routes = [
      CarouselModule,
      ModalModule,
      ServiceModule,
-     GenericModule,
      AuthModule,
      CoreModule,
      RouterModule.forRoot(routes)],
