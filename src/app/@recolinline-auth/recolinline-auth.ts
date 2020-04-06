@@ -170,7 +170,7 @@ export class LoginComponent implements AfterViewInit {
     
     form:FormGroup;
 
-    @ViewChild('childModal') 
+    @ViewChild('childModal', { static: true }) 
     childModal: ModalDirective;
     
     private visible:boolean = false;

@@ -1,5 +1,5 @@
 import { Injectable , Injector } from '@angular/core';
-import { DOCUMENT } from "@angular/platform-browser";
+import { DOCUMENT } from "@angular/common";
 import { ɵBrowserDomAdapter } from "@angular/platform-browser";
 import { HttpClient, HttpHeaders , HttpEvent, HttpHandler, HttpInterceptor, HttpRequest, HttpResponse } from '@angular/common/http';
 import { Observable, of } from 'rxjs';

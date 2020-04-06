@@ -9,13 +9,13 @@ import { Observable, of } from 'rxjs';
 })
 export class ConfigMuseumView extends DataView {
 
-  @ViewChild('dataCreatorValidator', { read: ViewContainerRef }) 
+  @ViewChild('dataCreatorValidator', { read: ViewContainerRef, static: true }) 
   private dataCreatorValidator: ViewContainerRef;
 
-  @ViewChild('validationExpector', { read: ViewContainerRef }) 
+  @ViewChild('validationExpector', { read: ViewContainerRef, static: true }) 
   private validationExpector: ViewContainerRef;
   
-  @ViewChild('identity', { read: ViewContainerRef }) 
+  @ViewChild('identity', { read: ViewContainerRef, static: true }) 
   private identity: ViewContainerRef;
     
   constructor(

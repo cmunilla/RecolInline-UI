@@ -416,7 +416,7 @@ export class DataCreatorAndValidatorComponent extends DataValidatorComponent {
 })
 export class ExpectingValidationComponent implements AfterViewInit{
     
-    @ViewChild('childModal') 
+    @ViewChild('childModal', { static: true }) 
     childModal: ModalDirective;
     
     private visible:boolean = false;

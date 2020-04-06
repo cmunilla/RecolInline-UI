@@ -31,25 +31,25 @@ class MuseumConsumer extends DataConsumer<IdNamePair> {
 })
 export class ArtifactView extends DataView implements AfterContentInit{ 
 
-    @ViewChild('dataCreatorValidator', { read: ViewContainerRef }) 
+    @ViewChild('dataCreatorValidator', { read: ViewContainerRef, static: true }) 
     private dataCreatorValidator: ViewContainerRef;
     
-    @ViewChild('validationExpector', { read: ViewContainerRef }) 
+    @ViewChild('validationExpector', { read: ViewContainerRef, static: true }) 
     private validationExpector: ViewContainerRef;
     
-    @ViewChild('identity', { read: ViewContainerRef }) 
+    @ViewChild('identity', { read: ViewContainerRef, static: true }) 
     private identity: ViewContainerRef;
 
-    @ViewChild('location', { read: ViewContainerRef }) 
+    @ViewChild('location', { read: ViewContainerRef, static: true }) 
     private location: ViewContainerRef;
 
-    @ViewChild('movement', { read: ViewContainerRef }) 
+    @ViewChild('movement', { read: ViewContainerRef, static: true }) 
     private movement: ViewContainerRef;
 
-    @ViewChild('picture', { read: ViewContainerRef }) 
+    @ViewChild('picture', { read: ViewContainerRef, static: true }) 
     private picture: ViewContainerRef;
     
-    @ViewChild('specific', { read: ViewContainerRef }) 
+    @ViewChild('specific', { read: ViewContainerRef, static: true }) 
     private specific: ViewContainerRef;
     
     protected currentNav:string;    

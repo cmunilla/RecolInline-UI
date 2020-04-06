@@ -2,7 +2,7 @@ import { Data, IdNamePair, KeyValuePair, DataViewSubComponent} from '../../../@r
 import { FormsModule } from '@angular/forms';
 import { Observable, of } from 'rxjs';
 import { toString, ClientHttpService } from '../../../@recolinline-service/recolinline-service';
-import { Component, Inject , EventEmitter, Input, NgZone, OnInit, OnDestroy, Output, ViewChild } from '@angular/core';
+import { Component, Inject, EventEmitter, Input, NgZone, OnInit, OnDestroy, Output, ViewChild, Directive } from '@angular/core';
 import { LinkedList } from 'ngx-bootstrap/utils';
 import { Slide } from '../../home/home.component';
 import { PictureComponent } from './picture.component';
@@ -14,12 +14,13 @@ export enum Direction {
   PREV
 }
 
+@Directive()
 export abstract class PictureViewComponent  extends DataViewSubComponent { 
 
     //uncomment for i18n generation and re-comment after
 //    slides:any;
 
-    @ViewChild('pictureModal') 
+    @ViewChild('pictureModal', { static: true }) 
     pictureModal: ModalDirective;
         
     @Output()
