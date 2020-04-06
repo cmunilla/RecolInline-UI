@@ -24,7 +24,7 @@
     "e2e": "ng e2e"
   },
   "dependencies": {
-    "@angular-builders/custom-webpack": "^7.5.2",
+    "@angular-builders/custom-webpack": "^9.1.0",
     "@angular-builders/dev-server": "^7.3.1",
     "@angular/animations": "^9.1.0",
     "@angular/common": "^9.1.0",
