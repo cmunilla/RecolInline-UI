@@ -73,7 +73,7 @@
     "jsonwebtoken": "^8.5.1",
     "jwa": "^1.4.1",
     "jws": "^3.2.2",
-    "karma": "^4.4.1",
+    "karma": "^6.3.14",
     "karma-chrome-launcher": "~2.2.0",
     "karma-coverage-istanbul-reporter": "^2.1.1",
     "karma-jasmine": "^1.1.2",
