@@ -70,7 +70,7 @@
     "install": "^0.12.2",
     "jasmine-core": "^2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "jwa": "^1.4.1",
     "jws": "^3.2.2",
     "karma": "^6.3.14",
